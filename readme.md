@@ -1,11 +1,13 @@
-# Esolangs
+Esolangs
 ============
 
-This repository is a collection of my completed [Esolangs]{https://esolangs.org/}. Esolangs are basically esoteric programming languages, they are not meant to be used in production but they can be fun to play with and can prove useful to prove things regarding what can be done with a minimal set of instructions/operations.
+This repository is a collection of my completed [Esolangs](https://esolangs.org). Esolangs are basically esoteric programming languages, they are not meant to be used in production but they can be fun to play with and can prove useful to prove things regarding what can be done with a minimal set of instructions/operations.
 
 ## bt
 
 The bt language (bit, but short) is a stack based language where the only values that exist are 0 and 1.
+
+The main point of bt is that is has only one concrete data-manipulation instruction -- **nand** -- and yet it is turring complete.
 
 Instructions are written in sequence, white space and new lines do not matter. The interpeter executes instructions by searching for the shortest instruction that matches the string at the current position.
 
@@ -21,7 +23,9 @@ another[]
 // these two lines are equivalent
 function function
 functionfunction
-// anotherfunction cannot be called as the interpreter sees 'another' before it tries to read 'anotherfunction' so the next line will run 'another' and then 'function'
+// anotherfunction cannot be called as the interpreter sees 'another'
+// before it tries to read 'anotherfunction' so the next line will 
+// run 'another' and then 'function'
 anotherfunction
 ```
 
@@ -144,7 +148,7 @@ add8.d8
 !!!@!!!!!!@.c7
 !!@!!!@!.c4
 ```
-#### Thruth machine
+#### [Thruth machine](https://esolangs.org/wiki/Truth-machine)
 ```
 print1infenitely[!!@.d1back]
 /b 0if
@@ -153,10 +157,4 @@ fi else
   !.d1
 esle
 ```
-| Operators | Syntax | Interpetation |
-|   :---:   |  :--:  | ------------- |
-|   `>>`    |`f >> g`| `g∘f`, `g(f(.))`, `f` then `g`, `g` feeds on `f`. |
-|   `<<`    |`f << g`| `f∘g`... |
-| others <br>(`+`,`*`,`&&`...) | `p+q` | `p(.)+q(.)`, only applies if type `W` defines[^1] the operator `+`. |
-
 
