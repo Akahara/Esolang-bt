@@ -1,11 +1,15 @@
 Esolangs
 ============
 
-This repository is a collection of my completed [Esolangs](https://esolangs.org). Esolangs are basically esoteric programming languages, they are not meant to be used in production but they can be fun to play with and can prove useful to prove things regarding what can be done with a minimal set of instructions/operations.
+This repository is a collection of my [Esolangs](https://esolangs.org) (completed and ideas). Esolangs are basically esoteric programming languages, they are not meant to be used in production but they can be fun to play with and can prove useful to prove things regarding what can be done with a minimal set of instructions/operations.
 
 Languages:
 - [bt](#bt)
 - [Ypton](#Ypton)
+
+Ideas/languages without compilers:
+- [An actual language ideas](#An actual language ideas)
+- [Digot](#Digot)
 
 ## bt
 
@@ -216,3 +220,39 @@ The current implementation of Ypton has one or two tweeks compared to its specif
   wHiLe True...!;
 ("0")`System.Kernel.cout.ifopened.writeAndCloseImediatelyAfter`;
 ```
+
+
+## An actual language ideas
+
+Here is a draft for some features I'd like to see in the languages I use everyday.
+I'm mainly focusing on syntax issues but there are different concepts.
+```js
+let a = [1,2,3]
+; lambda
+let y = g->g+3
+; array mapping
+let b = a|x->x+2|x->x%3
+; return omited
+def foo(bar, baz)
+	bar+6*baz
+; partial binding
+let c = foo(2,.)
+print(c(53))
+; array indexing
+let d = a_0 + a_1 + a_-1 + a_[-1] + a_[c] + a[c]
+```
+
+## Digot
+
+The idea is to use letters only for keywords, and digits for everything else, including variables.
+
+On startup there are no variables declared, so `4` *is the value 4*.
+If at any point I write `4 = 2` then `4` becomes a variable with the value `2` - or the value of the variable `2` if it is one.
+From now on I won't be able to use `4` as a value, if I need to add 4 to anything I'll have to do `+= 126-122`, given that `126` and `122` are not bound to variables.
+
+To make it more fun you could impose that variables must be declared in ascending order, starting from 0.
+Or make it so that numbers can only be used once as their values, with no restrictions on their uses as variables.
+
+The rest of the language has no real importance, as long as it's imperative.
+
+The idea is not fully fledged yet, I might make a compiler for it someday.
