@@ -5,11 +5,11 @@ This repository is a collection of my [Esolangs](https://esolangs.org) (complete
 
 Languages:
 - [bt](#bt)
-- [Ypton](#Ypton)
+- [Ypton](#ypton)
 
 Ideas/languages without compilers:
-- [An actual language ideas](#An actual language ideas)
-- [Digot](#Digot)
+- [An actual language ideas](#an-actual-language-ideas)
+- [Digot](#digot)
 
 ## bt
 
